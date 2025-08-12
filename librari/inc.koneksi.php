@@ -1,8 +1,8 @@
 <?php
-$db_host1 = 'localhost';
-$db_user1 = 'root';
-$db_pass1 = '';
-$database1 = 'inventaris';
+$db_host1 = 'localhost'; //ganti sesuai host
+$db_user1 = 'root'; // ganti sesuai user
+$db_pass1 = ''; // password user
+$database1 = 'db_inv'; // database 
  
 $koneksi = new mysqli($db_host1, $db_user1, $db_pass1, $database1);
  
