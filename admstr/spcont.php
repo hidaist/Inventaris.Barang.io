@@ -1,0 +1,1 @@
+<p style="color:light;font-size:10px;" title="&copy; DMS &copy; 089666506801">&copy; 2023 - <?php echo date("Y"); ?> by DMS </p>
