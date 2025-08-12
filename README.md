@@ -25,7 +25,7 @@ Clone repository ini ke komputer Anda.
 
 Import file database .sql ke MySQL.
 
-Sesuaikan konfigurasi koneksi database di file config.php.
+Sesuaikan konfigurasi koneksi database di file librari/inc.koneksi.php
 
 Jalankan aplikasi melalui browser.
 
