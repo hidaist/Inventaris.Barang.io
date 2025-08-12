@@ -29,6 +29,9 @@ Sesuaikan konfigurasi koneksi database di file librari/inc.koneksi.php
 
 Jalankan aplikasi melalui browser.
 
+user:admin
+password:admin 
+
 🚀 Pengembangan Lebih Lanjut
 Jika Anda memerlukan pengembangan lebih lanjut, penambahan fitur khusus (custom), atau integrasi dengan sistem lain, silakan hubungi saya melalui:
 📧 Email: dhaisimam.s@gmail.com
