@@ -1,6 +1,6 @@
 # Inventaris.Barang.io 
 
-**License:** CodeIgniter Bootstrap / MIT
+**License:**  Bootstrap / MIT
 
 ## Deskripsi Produk
 
