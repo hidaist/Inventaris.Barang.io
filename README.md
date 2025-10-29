@@ -1,42 +1,167 @@
-📦 Aplikasi Inventaris
-Aplikasi Inventaris ini dibuat untuk membantu proses pencatatan, pengelolaan, dan pelacakan barang secara mudah dan efisien.
-Didesain dengan antarmuka yang sederhana namun fungsional, aplikasi ini dapat digunakan untuk berbagai kebutuhan, mulai dari usaha kecil, sekolah, hingga organisasi.
+# Inventaris.Barang.io 
 
-✨ Fitur Utama
-Tambah, ubah, dan hapus data barang dengan cepat.
+**License:** CodeIgniter Bootstrap / MIT
 
-Pencarian dan filter data untuk mempermudah pengelolaan.
+## Deskripsi Produk
 
-Manajemen dengan pembaruan otomatis.
+Inventaris.Barang.io adalah boilerplate aplikasi web berbasis **PHP** yang disesuaikan untuk sistem inventaris sederhana . Dirancang untuk membantu mahasiswa atau developer cepat membuat prototype tugas akhir atau aplikasi inventaris berlaku di lingkungan kampus/organisasi.
 
-Laporan inventaris untuk memantau jumlah dan status barang.
+Dengan ini Anda bisa fokus ke fitur inti — penambahan barang, peminjaman, pengembalian, laporan — tanpa harus menulis konfigurasi dasar dan autentikasi dari nol.
 
-Pengamanan akses dengan sistem login.
+---
 
-🛠 Teknologi yang Digunakan
-Backend: PHP + MySQL
+## 🚀 Fitur Utama
 
-Frontend: HTML, CSS, JavaScript
+1. **Arsitektur Modern & Struktur Terorganisir**
 
-Library Pendukung: Bootstrap, jQuery
+   * Struktur yang memudahkan pengembangan dan deployment
 
-📋 Cara Menggunakan
-Clone repository ini ke komputer Anda.
+2. **Autentikasi**
 
-Import file database .sql ke MySQL.
+   * Login
+   * Role `admin` 
+   * Session
 
-Sesuaikan konfigurasi koneksi database di file librari/inc.koneksi.php
+3. **CRUD Inventaris (Barang)**
 
-Jalankan aplikasi melalui browser.
+   * Tambah / ubah / hapus / lihat barang
+   * Validasi form terintegrasi
+   * Upload foto barang (opsional)
 
-user:admin
-password:admin 
+4. **Transaksi Peminjaman & Pengembalian**
 
-🚀 Pengembangan Lebih Lanjut
-Jika Anda memerlukan pengembangan lebih lanjut, penambahan fitur khusus (custom), atau integrasi dengan sistem lain, silakan hubungi saya melalui:
-📧 Email: dhaisimam.s@gmail.com
+   * Modul peminjaman barang
+   * Modul pengembalian & status barang
+   * Riwayat transaksi
 
-💡 Link Donasi , agar pengembangan aplikasi ini membawa keberkahan bersama. https://paypal.me/dhaisimams
+5. **Desain Responsif**
 
-📜 Lisensi
-Proyek ini dibuat sebagai bagian dari pembelajaran/pengembangan dan bebas digunakan untuk kebutuhan pribadi atau organisasi.
+   * Bootstrap 5
+   * Layout yang bersih, modern, dan responsif
+   * Font Awesome untuk ikon
+
+---
+
+## 🛠️ Prasyarat
+
+* PHP 8.1+ (direkomendasikan)
+* MySQL / MariaDB
+* Web server (Apache / Nginx) atau built-in server (`php spark serve`)
+
+---
+
+## Langkah Instalasi
+
+1. Clone repository
+
+```bash
+git clone https://github.com/hidaist/Inventaris.Barang.io.git
+cd Inventaris.Barang.io
+```
+
+
+2. Buat database 
+
+```
+Berada di Folder database  import => inventaris.sql
+```
+
+3. Jalankan server
+
+```
+start (rekomendasi pakai Laragon => user friendly)
+```
+
+4. Buka aplikasi di browser: `http://localhost` (atau port yang tertera)
+
+---
+
+## 👤 Akun Demo (default)
+
+* **Admin**
+
+  * Username: `admin`
+  * Password: `admin`
+
+> (Silakan ubah password setelah instalasi atau gunakan seeders untuk menyesuaikan akun)
+
+---
+
+## 📁 Struktur Proyek (ringkasan)
+
+```
+admstr/
+├─ control/
+│  ├─ barang.control.php
+│  ├─ barangKembali.control.php
+│  ├─ controlfile.php
+│  ├─ pinjamBarang.control.php
+│  ├─ ruang.control.php
+│  └─ useradmin.control.php
+├─ forms/
+│  ├─ barang.forms.php
+│  ├─ barangKembali.forms.php
+│  ├─ forms.file.php
+│  ├─ pinjamBarang.forms.php
+│  ├─ ruang.forms.php
+│  └─ useradmin.forms.php
+├─ grafik/
+│  ├─ grapich5tahunan.php
+│  ├─ grapichkondisiasset.php
+│  ├─ grapichtahunan.php
+│  └─ grapichunion.php
+├─ images/
+│  ├─ file image
+│  └─ file image
+├─ librari/
+│  └─ inc.koneksi.php
+└─ lightbox/
+|  └─ file2 source pendukung
+└─ view/
+   ├─ barang.views.php
+   ├─ barangBaikDetail.views.php
+   ├─ barangDetail.views.php
+   ├─ barangRusakBeratDetail.views.php
+   ├─ barangRusakRinganDetail.views.php
+   ├─ graph5tahunan.views.php
+   ├─ graphKondisiAset.views.php
+   ├─ graphTahunan.views.php
+   ├─ pengembalianBarang.views.php
+   ├─ pengembalianBarangRekap.views.php
+   ├─ pinjamBarang.views.php
+   ├─ pinjamBarangRekap.views.php
+   ├─ ruang.views.php
+   ├─ ruangDetail.views.php
+   ├─ useradmin.views.php
+   └─ viewsfile.views.php
+
+
+```
+
+---
+
+## 🎯 Fitur yang Tersedia
+
+* Autentikasi & Otorisasi (login, logout)
+* Dashboard statistik singkat
+* Manajemen barang (CRUD)
+* Manajemen peminjaman & pengembalian
+* Validasi form & flash messages
+
+
+---
+
+
+
+## 📄 Lisensi
+
+Distribusi di bawah MIT License. Lihat file `LICENSE` untuk detail.
+
+---
+
+## 📞 Support
+
+Untuk masalah teknis, buka *Issues* di repository GitHub.
+
+---
+📧 Email: [dhaisimam.s@gmail.com] 🐛 Issues: GitHub Issues 🙏 Acknowledgments PHP - PHP framework by DMZ Bootstrap  - CSS framework Font Awesome - Icons.
