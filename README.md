@@ -223,7 +223,7 @@ SET SQL_MODE=@OLDTMP_SQL_MODE;
 3. Jalankan server
 
 ```
-start (rekomendasi pakai Laragon => user friendly)
+
 ```
 
 4. Buka aplikasi di browser: `http://localhost` (atau port yang tertera)
