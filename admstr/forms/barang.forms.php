@@ -195,7 +195,7 @@ $button         = (!empty($_GET['kdubah'])) ? "update" : "submit";
                                                    
                                                 </div>
                                                 
-                                            
+                                            <!--
                                                 <div class="form-group">
                                                 <label for="cc-number" class="control-label mb-1">Instansi</label>
                                                     <select data-placeholder="Pilih Unit" class="standardSelect" name="cmbunit" tabindex="1" required>
@@ -206,7 +206,7 @@ $button         = (!empty($_GET['kdubah'])) ? "update" : "submit";
                                                     <option value="Instansi Lain" <?php if(trim($unit == "Instansi Lain")) echo"selected"; ?> >Instansi Lain</option>
                                                     
                                                 </select><?php // echo"$kondisi";?>
-                                            </div>
+                                            </div> -->
                                                 <div class="form-group has-success">
                                                     <label for="cc-name" class="control-label mb-1">Dana Pembelian</label>
                                                     <input 
