@@ -237,7 +237,7 @@ SET SQL_MODE=@OLDTMP_SQL_MODE;
   * Username: `admin`
   * Password: `admin`
 
-> (Silakan ubah password setelah instalasi atau gunakan seeders untuk menyesuaikan akun)
+> (Silakan ubah password setelah instalasi)
 
 ---
 
