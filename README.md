@@ -4,7 +4,7 @@
 
 ## Deskripsi Produk
 
-Inventaris.Barang.io adalah  aplikasi web berbasis **PHP** yang disesuaikan untuk sistem inventaris sederhana . Dirancang untuk membantu mahasiswa atau developer cepat membuat prototype tugas akhir atau aplikasi inventaris berlaku di lingkungan kampus/organisasi.
+Inventaris.Barang.io adalah  aplikasi web berbasis **PHP** yang disesuaikan untuk sistem inventaris sederhana . Dirancang untuk membantu pengelolaan data dengan cepat. aplikasi inventaris
 
 Dengan ini Anda bisa fokus ke fitur inti — penambahan barang, peminjaman, pengembalian, laporan — tanpa harus menulis konfigurasi dasar dan autentikasi dari nol.
 
